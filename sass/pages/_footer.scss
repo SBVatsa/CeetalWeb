@@ -1,0 +1,50 @@
+@import "variable";
+footer {
+  background-color: $footerBGColor;
+  color: $footerTextColor;
+  padding: 0px;
+  padding-bottom: 0;
+  -webkit-align-content: center;
+  text-align: center;
+  @media (max-width: 767px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .footer-container {
+    margin: 0 auto;
+    max-width: 1180px;
+    padding: 10px 20px 5px 20px;
+    @media (max-width: 767px) {
+      width: 100%;
+      padding: 20px 0 0 0;
+    }
+    h5{
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .copyright {
+    background: #000000;
+    margin: 0 -20px;
+    padding: 5px 15px;
+    color: $footerTextColor;
+    font-size: 13px;
+    line-height: 1.8em;
+    text-align: center;
+    -webkit-align-content: center;
+  }
+}
+.footer-container .link-boxes p{
+  padding: 0;
+  margin: 15px 0 20px;
+}
+
+.facebook-footer{
+  svg{
+    stroke: #666;
+    stroke-width: 1px !important;
+  }
+}
+.contact-footer__address{
+  margin: 10px 0;
+}

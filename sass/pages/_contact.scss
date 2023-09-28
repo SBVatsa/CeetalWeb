@@ -1,0 +1,196 @@
+.contact-title-bg{
+  background: linear-gradient(
+                  rgba(0, 0, 0, 0.75),
+                  rgba(0, 0, 0, 0.75)
+  ),
+  url('../assets/images/connect-bg.jpg');
+  background-size: cover;
+  height: 60%;
+  width: 100%;
+  z-index: 1000;
+  background-position: left;
+  @media (max-width: 767px) {
+    height: 40%;
+  }
+}
+
+.contact-us{
+  margin: 80px 0;
+  @media (max-width: 767px) {
+    margin: 20px 0;
+  }
+  .contact-us-wrapper{
+    width: 1100px;
+    margin: 0 auto;
+    @media (max-width: 767px) {
+      width: 90% !important;
+    }
+    @media (max-width: 1024px) {
+      width: 80%;
+    }
+
+    .contact-us-container{
+      background: $secondaryTextColor;
+      @include box-shadow (4px 4px 25px 4px rgba(0, 0, 0, 0.12));
+      border-radius: 10px;
+      display: flex;
+      padding: 80px;
+      @media (max-width: 767px) {
+        padding: 25px;
+        flex-direction: column;
+      }
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        padding: 30px 50px;
+      }
+      .contact-us-content{
+        width: 50%;
+        padding: 10px;
+        margin-right: 25px;
+        @media (max-width: 767px) {
+          width: 100%;
+          padding: 0;
+        }
+        @media (max-width: 1024px) {
+          width: 100%;
+          padding: 0;
+        }
+        h1{
+          font-weight: 500;
+          font-size: 35px;
+          line-height: 61px;
+          letter-spacing: 0.02em;
+          color: $themeColor;
+          margin-bottom: 15px;
+          @media (max-width: 767px) {
+            font-size: 28px;
+          }
+        }
+        p{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0.04em;
+          color: #363636;
+          margin-bottom: 13px;
+          @media (max-width: 767px) {
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+      .contact-us-form{
+        width: 50%;
+        @media (max-width: 767px) {
+          width: 100%;
+        }
+        @media (max-width: 1024px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+form {
+  color: $black;
+  .form-row {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    @media(max-width: 768px) {
+      margin-bottom: 10px;
+    }
+    .form_input {
+      width: 100%;
+      height: auto;
+      padding: 4px 10px 4px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      border: 1px solid $inputBorder;
+      &:focus {
+        outline: none;
+        border-color: $themeColor;
+        @include box-shadow ( 0 0 3px 0.5px $themeColor);
+      }
+      @media(max-width: 768px) {
+        font-size: 14px;
+      }
+    }
+
+    textarea {
+      resize: none;
+      width: 100%;
+      height: auto;
+      padding: 4px 10px 4px;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  .form-row-button {
+    .button-container {
+      margin-bottom: 20px;
+      @media (max-width: 767px) {
+        text-align: center;
+      }
+      .form-button {
+        background: transparent;
+        color: $themeColor;
+        font-size: 16px;
+        line-height: 22px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        min-width: 100px;
+        text-transform: uppercase;
+        border: 2px solid $themeColor;
+        cursor: pointer;
+
+        &:hover {
+          background: $themeColor;
+          color: $secondaryTextColor;
+          border: 2px solid transparent;
+        }
+        &:focus {
+          outline: none;
+        }
+        @media(max-width: 768px) {
+          font-size: 14px;
+          line-height: 18px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          margin-top: 10px;
+        }
+      }
+
+      .link {
+        line-height: 15px;
+        border: 1px solid $secondaryTextColor;
+        border-radius: 2px;
+        padding: 10px 24px;
+        color: $secondaryTextColor;
+
+        &:hover {
+          background: $secondaryTextColor;
+          color: #555;
+        }
+      }
+    }
+
+    .small-description {
+      text-align: center;
+      font-size: 16px;
+      line-height: 22px;
+      max-width: 640px;
+      margin: 0 auto;
+      color: #555;
+      @media (max-width: 767px) {
+        font-size: 14px;
+        line-height: 18px;
+      }
+    }
+  }
+}

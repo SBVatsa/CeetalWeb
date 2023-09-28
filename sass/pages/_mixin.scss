@@ -1,0 +1,21 @@
+
+
+//transition mixin
+//Ex:
+//@include transition (all .3s ease-out);
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}
+
+//box-shadow mixin
+//Ex:
+//@include box-shadow (0 2px 4px 0 rgba(25,29,36,.08));
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property;
+}
