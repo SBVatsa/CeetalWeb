@@ -886,9 +886,19 @@
 .section-dark {
   background: #F5F5F5; }
 
-.pdf-container object {
-  width: 100%;
-  height: 100%; }
+.product-service {
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .product-service img {
+    margin: 15px;
+    border: 1px solid #e5e5e5;
+    width: 95%; }
+    @media (max-width: 767px) {
+      .product-service img {
+        width: 93%; } }
 
 .contact-us-section {
   background-image: url("../assets/images/bg-contact.png");
@@ -1298,3 +1308,5 @@ form {
       form .form-row-button .small-description {
         font-size: 14px;
         line-height: 18px; } }
+
+
